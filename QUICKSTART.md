@@ -1,22 +1,22 @@
-# 🎯 Quick Start Guide - Quote Builder Pro v2.0
+#  Quick Start Guide - Quote Builder Pro v2.0
 
 ## Installation & Setup
 
 ### 1. Install Dependencies
-```powershell
+powershell
 pip install -r requirements.txt
-```
+
 
 ### 2. Run the Application
-```powershell
+powershell
 streamlit run app.py
-```
 
-The app will open at `http://localhost:8501`
+
+The app will open at http://localhost:8501
 
 ---
 
-## 🎮 First Time User Guide
+##  First Time User Guide
 
 ### Step 1: Explore the Dashboard
 - **Page:** Dashboard (default page)
@@ -44,9 +44,9 @@ The app will open at `http://localhost:8501`
 ### Step 4: Check Customer Health
 - **Page:** Customer Health
 - **Shows:** 
-  - 🟢 Low Risk customers
-  - 🟡 Medium Risk (needs attention)
-  - 🔴 High Risk (churn alert!)
+  -  Low Risk customers
+  -  Medium Risk (needs attention)
+  -  High Risk (churn alert!)
 - **Action:** Click "At Risk" tab to see which customers need outreach
 
 ### Step 5: View Analytics
@@ -91,13 +91,13 @@ The app will open at `http://localhost:8501`
   - Status changes
 
 ### Step 10: Customize Theme
-- **Location:** Sidebar → Theme toggle
+- **Location:** Sidebar  Theme toggle
 - **Options:** Dark (default) or Light
 - **Impact:** Changes color scheme across entire app
 
 ---
 
-## 💡 Pro Tips
+##  Pro Tips
 
 ### Batch Import Saves Time
 Instead of creating 100 quotes one-by-one:
@@ -107,7 +107,7 @@ Instead of creating 100 quotes one-by-one:
 4. Upload - done in seconds!
 
 ### Customer Health Tells the Story
-If a customer shows 🔴 HIGH RISK:
+If a customer shows  HIGH RISK:
 - Recent activity: None (90+ days)
 - Action: Call/email them immediately
 - This is your churn warning system!
@@ -119,7 +119,7 @@ Forecast shows next 30/90 days revenue:
 - Confidence level shows accuracy
 
 ### Audit Log for Compliance
-Admin → Audit Log shows:
+Admin  Audit Log shows:
 - Who created each quote
 - When it was created
 - All status changes
@@ -134,7 +134,7 @@ Before presenting to leadership:
 
 ---
 
-## 🎨 Theme Guide
+##  Theme Guide
 
 ### Dark Theme (Professional)
 - Best for: Long work sessions, developers, night mode
@@ -150,19 +150,19 @@ Before presenting to leadership:
 
 ---
 
-## ⚡ Time-Saving Shortcuts
+##  Time-Saving Shortcuts
 
 | Task | Time Before | Time After | Savings |
 |------|------------|-----------|---------|
-| Create 100 quotes | 2 hours | 5 minutes | 1h 55m ⭐ |
-| Export monthly report | 30 min | 1 minute | 29m ⭐ |
-| Find at-risk customers | 1 hour | 2 minutes | 58m ⭐ |
-| Check sales metrics | 20 min | 10 seconds | 19m 50s ⭐ |
-| Find past quote | 15 min | 10 seconds | 14m 50s ⭐ |
+| Create 100 quotes | 2 hours | 5 minutes | 1h 55m  |
+| Export monthly report | 30 min | 1 minute | 29m  |
+| Find at-risk customers | 1 hour | 2 minutes | 58m  |
+| Check sales metrics | 20 min | 10 seconds | 19m 50s  |
+| Find past quote | 15 min | 10 seconds | 14m 50s  |
 
 ---
 
-## 🚨 Common Tasks
+##  Common Tasks
 
 ### I need to email a quote to a client
 1. Go to "Manage Quotes"
@@ -186,7 +186,7 @@ Before presenting to leadership:
 ### I want to know which customers might leave us
 1. Go to "Customer Health"
 2. Click "At Risk" tab
-3. See all 🔴 HIGH RISK customers
+3. See all  HIGH RISK customers
 4. Click on each to see why
 
 ### I need to present sales metrics
@@ -216,27 +216,27 @@ Before presenting to leadership:
 
 ---
 
-## 🎯 Feature Highlights
+##  Feature Highlights
 
-### 🤖 AI Features
+###  AI Features
 - **Churn Prediction:** Warns when customer might leave
 - **Revenue Forecast:** Predicts next month's sales
 - **Product Recommendations:** Suggests what to sell next
 - **CLV Analysis:** Shows customer lifetime value
 
-### 📊 Analytics
+###  Analytics
 - **Sales Intelligence:** All key metrics in one view
 - **Health Scores:** Composite metric for each customer
 - **Performance Tracking:** Product and customer analytics
 - **Trend Analysis:** See if business is growing
 
-### ⚡ Automation
+###  Automation
 - **Batch Import:** Create 100s of records in seconds
 - **Auto-Alerts:** Get notified when revenue drops
 - **Bulk Actions:** Update 50 quotes at once
 - **Scheduled Exports:** Generate reports automatically
 
-### 🔒 Enterprise
+###  Enterprise
 - **Audit Trail:** Track every action
 - **User Roles:** Admin, Manager, Sales Rep
 - **Permissions:** Role-based access control
@@ -244,12 +244,12 @@ Before presenting to leadership:
 
 ---
 
-## 📞 Need Help?
+##  Need Help?
 
 ### Features Not Working?
 1. Refresh the browser (F5)
 2. Clear cache: Ctrl+Shift+Delete
-3. Restart Streamlit: Ctrl+C, then `streamlit run app.py`
+3. Restart Streamlit: Ctrl+C, then streamlit run app.py
 
 ### Data Not Showing?
 1. Make sure you're on the right page
@@ -268,21 +268,21 @@ Before presenting to leadership:
 
 ---
 
-## 🎉 You're Ready!
+##  You're Ready!
 
 You now have an **enterprise-grade quote management system** with:
 
-✅ 10 advanced features  
-✅ AI-powered analytics  
-✅ Real-time alerts  
-✅ Batch operations  
-✅ Multi-user support  
-✅ Professional exports  
-✅ Theme customization  
-✅ Complete audit trail  
+ 10 advanced features  
+ AI-powered analytics  
+ Real-time alerts  
+ Batch operations  
+ Multi-user support  
+ Professional exports  
+ Theme customization  
+ Complete audit trail  
 
 **Start by exploring the Dashboard and creating your first quote!**
 
 ---
 
-*Happy quoting! 🚀*
+*Happy quoting! *
