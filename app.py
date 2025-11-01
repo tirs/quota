@@ -23,6 +23,7 @@ from batch_operations import (
     export_template_quotes_csv, export_template_customers_csv, export_template_products_csv
 )
 from alerts_manager import AlertManager, get_alert_color, get_alert_icon
+from ml_quickstart import get_quick_insights
 
 apply_dark_theme()
 db = Database()
@@ -214,6 +215,69 @@ def page_dashboard():
         quote_df['Amount'] = quote_df['Amount'].apply(format_currency)
         quote_df['Status'] = quote_df['Status'].apply(lambda x: x.upper())
         st.dataframe(quote_df, use_container_width=True, hide_index=True)
+    
+    # ML-Powered Insights
+    st.markdown("<hr style='border: 1px solid #30363D; margin: 30px 0;'>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #00D9FF;'>ML-Powered Insights</h3>", unsafe_allow_html=True)
+    
+    try:
+        insights = get_quick_insights()
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            churn_count = len(insights['churn_risks'])
+            st.markdown(
+                f"<div style='background-color: #161B22; padding: 20px; border-radius: 8px; border-left: 4px solid #FF006E;'>"
+                f"<p style='color: #8B949E; margin: 0;'>High-Risk Customers</p>"
+                f"<h2 style='color: #FF006E; margin: 10px 0 0 0;'>{churn_count}</h2>"
+                f"<p style='color: #8B949E; font-size: 12px; margin: 5px 0 0 0;'>Churn Alert</p>"
+                f"</div>", unsafe_allow_html=True
+            )
+        
+        with col2:
+            metrics = insights['metrics']
+            st.markdown(
+                f"<div style='background-color: #161B22; padding: 20px; border-radius: 8px; border-left: 4px solid #3FB950;'>"
+                f"<p style='color: #8B949E; margin: 0;'>Win Rate</p>"
+                f"<h2 style='color: #3FB950; margin: 10px 0 0 0;'>{metrics['win_rate']:.1f}%</h2>"
+                f"</div>", unsafe_allow_html=True
+            )
+        
+        with col3:
+            trends = insights['trends']
+            trend_color = '#3FB950' if 'Up' in trends['trend'] else '#FF006E'
+            st.markdown(
+                f"<div style='background-color: #161B22; padding: 20px; border-radius: 8px; border-left: 4px solid {trend_color};'>"
+                f"<p style='color: #8B949E; margin: 0;'>Revenue Trend</p>"
+                f"<h2 style='color: {trend_color}; margin: 10px 0 0 0;'>{trends['trend']}</h2>"
+                f"<p style='color: #8B949E; font-size: 12px; margin: 5px 0 0 0;'>{trends['trend_percent']:.1f}%</p>"
+                f"</div>", unsafe_allow_html=True
+            )
+        
+        # Show more details in expandable sections
+        with st.expander("View Details"):
+            tab1, tab2, tab3 = st.tabs(["Churn Risks", "Trends", "Deals"])
+            
+            with tab1:
+                if insights['churn_risks']:
+                    churn_df = pd.DataFrame(insights['churn_risks'])
+                    st.dataframe(churn_df[['customer_name', 'risk', 'reason']], use_container_width=True)
+                else:
+                    st.success("No high-risk customers")
+            
+            with tab2:
+                trends = insights['trends']
+                st.write(f"Overall: {trends['trend']} {trends['trend_percent']:.1f}%")
+                st.write(f"Month-to-Month: {trends['mom_change']:.1f}%")
+            
+            with tab3:
+                deals = insights['deals']
+                st.write(f"Average Deal: ${deals['average_deal']:,.0f}")
+                st.write(f"Total Revenue: ${deals['total_revenue']:,.0f}")
+    
+    except Exception as e:
+        st.warning(f"ML features temporarily unavailable: {str(e)}")
 
 def page_create_quote():
     render_header()

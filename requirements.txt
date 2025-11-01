@@ -10,3 +10,7 @@ python-dateutil
 scikit-learn
 numpy
 plotly
+xgboost
+prophet
+transformers
+torch
