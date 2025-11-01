@@ -1205,6 +1205,10 @@ def page_settings():
 # MAIN ROUTING
 # ===========================
 
+# Auto-navigate to Quote Details if a quote ID is set
+if st.session_state.current_quote_id is not None:
+    page = "Quote Details"
+
 if page == "Dashboard":
     page_dashboard()
 elif page == "Create Quote":
