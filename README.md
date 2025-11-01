@@ -1,20 +1,20 @@
-# 📊 Quote Builder Pro
+# Quote Builder Pro
 
 Professional Quote Management System built with Streamlit. Create, manage, and export quotes with advanced features.
 
 ## Features
 
-✅ **Dark Mode UI** - Modern, professional dark theme with cyan accent colors  
-✅ **Customer Management** - Add and manage customer profiles  
-✅ **Product Catalog** - Pre-loaded with 10+ professional services  
-✅ **Quote Creation** - Create quotes with multiple line items  
-✅ **Status Tracking** - Draft, Sent, Accepted, Rejected statuses  
-✅ **Tax Management** - Adjustable tax rates per quote  
-✅ **PDF Export** - Generate professional PDF quotes  
-✅ **CSV Export** - Export quote items as CSV  
-✅ **Analytics Dashboard** - Real-time metrics and reports  
-✅ **Embedded SQLite Database** - No setup required  
-✅ **Real Sample Data** - Pre-populated with demo data  
+**Dark Mode UI** - Modern, professional dark theme with cyan accent colors  
+**Customer Management** - Add and manage customer profiles  
+**Product Catalog** - Pre-loaded with 10+ professional services  
+**Quote Creation** - Create quotes with multiple line items  
+**Status Tracking** - Draft, Sent, Accepted, Rejected statuses  
+**Tax Management** - Adjustable tax rates per quote  
+**PDF Export** - Generate professional PDF quotes  
+**CSV Export** - Export quote items as CSV  
+**Analytics Dashboard** - Real-time metrics and reports  
+**Embedded SQLite Database** - No setup required  
+**Real Sample Data** - Pre-populated with demo data  
 
 ## Project Structure
 
@@ -187,11 +187,11 @@ Quote line items export with:
 
 ## Browser Compatibility
 
-- ✅ Chrome/Chromium
-- ✅ Firefox
-- ✅ Safari
-- ✅ Edge
-- ✅ Opera
+- Chrome/Chromium
+- Firefox
+- Safari
+- Edge
+- Opera
 
 ## Performance
 
@@ -237,4 +237,4 @@ v1.0 - Initial Release
 
 ---
 
-**Happy Quote Creating! 🚀**
+**Happy Quote Creating!**
